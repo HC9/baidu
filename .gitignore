@@ -1,3 +1,8 @@
 *.idea/
 *.vscode/
 *.git/
+*out/
+
+*.log
+*.pyc
+*.class
