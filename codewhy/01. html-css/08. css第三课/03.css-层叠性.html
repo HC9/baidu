@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>层叠性</title>
+  <style>
+    .box {
+      font-size: 2em;
+      color: red !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box" style="font-size: 100px;color: #00f;">
+    <!-- 除了添加 !important，内联样式比其他选择器添加的样式的权限都高 -->
+    <span>我在中国，我是中国人</span>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+  <head>
+    <meta charset="utf-8">
+    <title>INPUT 的练习</title>
+  </head>
+  <body>
+    <form action="/hello">
+      <div>
+        学校:
+        <label for="zhixing">
+          <input type="radio" id="zhixing" name="school" value="zhixing">
+          执信中学
+        </label>  
+        <label for="yizhong">
+          <input type="radio" id="yizhong" name="school" value="yizhong" checked>
+          一中
+        </label>
+      </div>
+
+
+      <div>
+        想学习的事
+        <label for="run">
+          <input type="checkbox" id="run" name="do" value="run">
+          跑步
+        </label>
+
+        <label for="pythoner">
+          <input type="checkbox" id="pythoner" name="do" value="pythoner" checked>
+          python工程师
+        </label>
+
+        <label for="focuser">
+          <input type="checkbox" id="focuser" name="do" value="focuser">
+          专注的人
+        </label>
+      </div>
+
+      <button type="reset">重置</button>
+      <input type="submit">
+    </form>
+  </body>
+</html>

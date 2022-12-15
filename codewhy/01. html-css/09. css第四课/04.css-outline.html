@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>外轮廓outline</title>
+     <style>
+      a {
+        outline: none;
+        margin-top: 100px;
+        display: inline-block;
+      }
+
+      a:focus{
+        outline: green solid 5px;
+      }
+
+      input {
+        outline: none;
+        
+      }
+
+      input:focus{
+        /* outline-color: none none green none; */
+        /* outline-style: none none dotted none; */
+        /* outline-width: 0px 0px 5px 0px ; */
+        /* 以上语法是错误的 */
+        outline: purple dotted 5px;
+        margin-left: 50px;
+      }
+     </style>
+  </head>
+  <body>
+    <a href="https://www.baidu.com" target="_blank">百度一下，你就知道</a>
+    <input name="input_box">
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>内边距 padding</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: chocolate;
+
+      /* 表示 4个边的内边距都是 20px */
+      padding: 20px;
+      /* 缩写了 bottom 和 left 两个属性 */
+      /* bottom 对应 top 为 20px */
+      /* left 对应 right 为 30px */
+      padding: 20px 30px;
+
+      /* 缩写一个属性 left */
+      /* left 对应 right 就是 30px */
+      padding: 20px 30px 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">我是 BOX 元素</div>
+</body>
+</html>

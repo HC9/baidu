@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>计算值</title>
+  <style>
+    .box {
+      /* 2em 即是默认元素， 16px 的 2 倍 */
+      font-size: 2em;
+    }
+
+    span {
+      /* em 的计算是使用父元素的 font-size */
+      /* span 的父元素是 div 元素，其是 2em，即 32 */
+      /* 如果不使用这个样式，则 span 默认大小也是 32px */
+      /* 其继承了 div.box 的 font-size 计算值 */
+      /* font-size 的计算值是以父元素 32 的 2 倍为算 */
+      font-size: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <p>这是在 div 元素中</p>
+    <span>这是 div 的中的 span 元素</span>
+  </div>
+</body>
+
+</html>

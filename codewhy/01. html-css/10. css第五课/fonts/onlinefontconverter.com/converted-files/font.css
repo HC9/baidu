@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'REEJI-FlashItalicGB-Flash-Medium';
+  src: url('REEJI-FlashItalicGB-Flash-Medium.svg#REEJI-FlashItalicGB-Flash-Medium') format('svg'),
+       url('REEJI-FlashItalicGB-Flash-Medium.ttf') format('truetype'),
+       url('REEJI-FlashItalicGB-Flash-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'why2';
+  src: url('why2.eot');
+  src: url('why2.eot?#iefix') format('embedded-opentype'),
+       url('why2.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

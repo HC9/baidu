@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>sibling-combinator</title>
+    <style>
+      div {
+        line-height: 1.5;
+      }
+
+      .second-box + div {
+        color: chocolate;
+      }
+
+      .third ~ div {
+        color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>这是兄弟选择器第一个</div>
+    <div class="second-box">这是兄弟选择器第二个</div>
+    <div>这是兄弟选择器第三个</div>
+    <div class="third">这是兄弟选择器第四个</div>
+    <div class="third">这是兄弟选择器第四个</div>
+    <div class="third">这是兄弟选择器第四个</div>
+    <div class="third">这是兄弟选择器第四个</div>
+  </body>
+</html>

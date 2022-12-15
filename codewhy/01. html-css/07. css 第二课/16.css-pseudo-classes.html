@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>伪元素pseudo-classes</title>
+    <style>
+      .box:link {
+        color: green;
+      }
+
+      .box:visited {
+        color: chocolate;
+      }
+
+      .box:focus {
+        /*  focus伪类是用于焦点在该元素上时才会显现*/
+        /*  如按 tab 键*/
+        font-size: 50px;
+        text-decoration: line-through;
+      }
+
+      .box:hover {
+        /*hover元素需要鼠标在元素上面时才会触发*/
+        font-size: 2em;
+        color: cornflowerblue;
+      }
+
+      .box:active {
+        /*active需要在元素上进行点击，但不松手才会显现*/
+        font-size: 3em;
+        color: red;
+        font-style: italic;
+
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.taobao.com">我是淘宝链接，没有配置样式</a>
+    <a href="https://www.baidu.com" class="box">我是百度链接</a>
+  </body>
+</html>

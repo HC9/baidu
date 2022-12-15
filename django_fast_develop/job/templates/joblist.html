@@ -1,0 +1,20 @@
+<!-- extends 用于继承模板 -->
+{% extends "base.html" %}
+
+<!-- block 是自定义区块，要有开合两个 -->
+<!-- block 是开， endblock 是闭 -->
+<!-- block 区块或引擎的 for if 等标签，都要有开合标签 -->
+{% block content %}
+
+    {% if job_list %}
+        <ul>
+            {% for li in job_list %}
+                <li><a href="/job/{{ li.id }}"><span>{{ li.job_types }}</span>--<span>{{ li.job_name }}</span></a></li>
+            {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>No Job!</p>
+    {% endif %}
+
+{% endblock %}

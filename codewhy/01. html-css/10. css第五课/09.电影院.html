@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>电影院购物单</title>
+  <style>
+    table {
+      text-align: center;
+      border-collapse: collapse;
+      /* border-collapse 可以拆叠默认的边框，并非是一定要设置  border 后才可使用 */
+    }
+
+    caption,
+    th,
+    td {
+      padding: 10px 15px;
+
+    }
+
+    caption,
+    th {
+      font-weight: 700;
+      font-size: 17px;
+    }
+
+    .start {
+      font-weight: 700;
+      display: block;
+    }
+
+    .end {
+      display: block;
+      color: darkgray;
+    }
+
+   table tbody tr:nth-child(2n+1){
+      background-color: darksalmon;
+
+    }
+
+    thead, table tbody tr:nth-child(2n){
+      background-color: darkgray;
+    }
+
+    tbody tr td:nth-child(n+4){
+      font-weight: 700;
+      color: red;
+    }
+
+    a{
+      background-color: red;
+      border-radius: 10px;
+      display: inline-block;
+      width: 70px;
+      line-height: 30px;
+      font-size: 15px;
+      text-decoration: none;
+      color: white;
+
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>影院电影放映列表</caption>
+    <thead>
+      <th>放映时间</th>
+      <th>语言版本</th>
+      <th>放映厅</th>
+      <th>售价（元）</th>
+      <th>选坐购票</th>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td>
+          <span class="start">13:15</span>
+          <span class="end">15:00散场</span>
+        </td>
+        <td>国语3D</td>
+        <td>2号厅</td>
+        <td>¥48.5</td>
+        <td><a href="#">选座购票</a></td>
+      </tr>
+
+      <tr>
+        <td>
+          <span class="start">13:15</span>
+          <span class="end">15:00散场</span>
+        </td>
+        <td>国语3D</td>
+        <td>2号厅</td>
+        <td>¥48.5</td>
+        <td><a href="#">选座购票</a></td>
+      </tr>
+      
+      <tr>
+        <td>
+          <span class="start">13:15</span>
+          <span class="end">15:00散场</span>
+        </td>
+        <td>国语3D</td>
+        <td>2号厅</td>
+        <td>¥48.5</td>
+        <td><a href="#">选座购票</a></td>
+      </tr>
+      
+      <tr>
+        <td>
+          <span class="start">13:15</span>
+          <span class="end">15:00散场</span>
+        </td>
+        <td>国语3D</td>
+        <td>2号厅</td>
+        <td>¥48.5</td>
+        <td><a href="#">选座购票</a></td>
+      </tr>
+ 
+      <tr>
+        <td>
+          <span class="start">13:15</span>
+          <span class="end">15:00散场</span>
+        </td>
+        <td>国语3D</td>
+        <td>2号厅</td>
+        <td>¥48.5</td>
+        <td><a href="#">选座购票</a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

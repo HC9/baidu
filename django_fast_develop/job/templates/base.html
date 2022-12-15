@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<button><a href="/" style="text-decoration: none; color: #007bff">首页</a></button>
+{# 用于在未登录的状态下，应该是显示登录；登录状态下，则是登录 #}
+{% if user.is_authenticated %}
+    <button><a href="/accounts/logout" style="text-decoration: none; color: #007bff">退出</a>
+    </button>
+{% else %}
+    <button>
+        <a href="/accounts/login" style="text-decoration: none; color: #007bff">登录</a>
+    </button>
+{% endif %}
+
+<button><a href="/joblist" style="text-decoration: none;color: #007bff">职位列表</a></button>
+
+{% if user.is_authenticated %}
+    <p>欢迎 {{ user.username }}，期待你的加入</p>
+{% else %}
+    <p>登录系统即可进行简历投递</p>
+{% endif %}
+<h1>菜果科技</h1>
+{% block content %}
+{% endblock %}
+</body>
+</html>

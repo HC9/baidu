@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    .item {
+      width: 288.6px;
+      height: 236.333;
+
+    }
+    
+
+    .item>.desc>a>p {
+      margin-top: 6px;
+      /* white-space: nowrap; */
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      display: -webkit-box;
+      -webkit-line-clamp:2;
+      -webkit-box-orient:vertical;
+    }
+
+    .item>.author>a {
+      margin-top: 6px;
+      color: #888;
+      display: inline-block;
+    }
+
+    /* :: 双冒号开头是伪元素，单冒号开头 : 是伪类 */
+    /* 伪元素可以用来放置在页面中显示 */
+    /* 伪类是用来选择元素的特定状态的 */
+    .item>.author::before {
+      content: url(./imgs/widget-up.svg);
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      position: relative;
+      top: 1px;
+    }
+
+    img {
+      width: 288.6px;
+      height: 162.333px;
+      /* 默认图片上面有圆边框的效果 */
+      border-radius: 10px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="item">
+    <div>
+      <a href="#">
+      <img src="//i0.hdslb.com/bfs/archive/510b4b9a6d4b90950341f0a76109061a0e105d57.jpg@672w_378h_1c" alt="bilibili背景图"
+        referrerpolicy="no-referrer">
+        </a>
+      <!-- bilibili 图片网站设置无法跨域获取图片 -->
+      <!-- 默认 referrer 的标着携带的是当前的域名  127.0.0.1 -->
+      <!-- 该域名不是 bilibili cdn 允许访问的域名 -->
+      <!-- referrerpolicy 配置成 no-referrer 即不携带该标头 -->
+      <!-- cdn 无法判断该请求是否跨域，通常都会允许，过频的访问可能会视为爬虫被封禁 -->
+    </div>
+    <div class="desc">
+      <a href="#">
+        <p>有人问我，二老板到底是干嘛的？？（我笑了，在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在在阿拉斯加看极光</p>
+      </a>
+    </div>
+    <div class="author">
+      <!-- 使用 div 直接包住，则文字会仅跟着伪元素 -->
+      <!-- 使用 span 也是直接跟着，使用 margin 也无效 -->
+      <!-- TODO 用 a 元素时会自动中间有空格空间产生 -->
+      <a style="display: inline-block;" href="#">张尔达</a>
+    </div>
+  </div>
+</body>
+
+</html>

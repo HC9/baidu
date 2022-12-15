@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border实现图形和旋转</title>
+  <style>
+    .main{
+      height: 100px;
+      width: 100px;
+
+      border: 50px solid transparent;
+      border-left-color: orange;
+      box-sizing: border-box;
+      transform: rotate(180deg);
+      transform-origin: center 25%;
+      display: inline-block`;
+    }
+
+    .box{
+      height: 100px;
+      width: 100px;
+
+      display: inline-block;
+      border: 50px solid transparent;
+      border-left-color: aquamarine;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="main"></div>
+</body>
+</html>

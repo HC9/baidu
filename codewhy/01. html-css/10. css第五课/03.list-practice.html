@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>列表练习</title>
+  <style>
+    ol {
+      /* list-style-type 是列表样式，只对于 ul 或 ol 元素才能生效*/
+      /* 重置该属性为 none，再利用样式为列表添加序号 */
+      list-style-type: none;
+    }
+
+    .item {
+      display: block;
+      line-height: 24px;
+      margin-top: 20px;
+    }
+
+    .item .num {
+      font-weight: 700;
+      font-size: 20px;
+      color: #999;
+      /* #999 字体是灰色字体 */
+
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .hot {
+      background-image: url(./images/hot.svg);
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      position: relative;
+      top: 2px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    a:hover {
+      color: #f04142;
+    }
+
+
+    /* nth-child 是结构伪类，是子元素 */
+    ol>li:nth-child(1) .num {
+      color: #f00;
+    }
+
+
+    .list .item:nth-child(2) .num {
+      color: orange;
+    }
+
+    
+    .list .a-class .item:nth-child(1) .num {
+      color: chartreuse;
+    } 
+  </style>
+</head>
+
+<body>
+  <!-- 第一个 DIV 为整体的列表 -->
+  <div>
+    <!-- 需要用到 ol 和 li -->
+    <ol class="list">
+      <!-- a 元素，可以令鼠标在悬停时有小手的效果，并可以设置特别的颜色 -->
+      <!-- 超文本链接， href 全称为 hypertext reference -->
+      <li class="item">
+        <a href="#">
+
+          <span class="num">1</span>
+          <span class="content">我要测试第一个</span>
+          <!-- 使用 i 代替 span，i 在行业应用中脱离原有设计之意，被意用作 img 图标 -->
+          <!-- <span class="status hot"></span> -->
+          <i class="hot"></i>
+        </a>
+
+      </li>
+
+      <li class="item">
+        <a href="#">
+
+          <span class="num">2</span>
+          <span class="content">我要测试第一个</span>
+          <!-- <span class="status"></span> -->
+          <i class="hot"></i>
+        </a>
+
+      </li>
+
+
+
+      <a href="#" class="a-class">
+        <li class="item">
+          <span class="num">3</span>
+          <span class="content">我要测试第一个</span>
+          <!-- <span class="status hot"></span> -->
+          <!-- <i class="hot"></i> -->
+
+        </li>
+
+      </a>
+
+
+    </ol>
+  </div>
+</body>
+
+</html>

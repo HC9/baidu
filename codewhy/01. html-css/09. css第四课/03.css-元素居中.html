@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>元素的居中</title>
+  <style>
+    body {
+      margin: 0px;
+      /* 块元素设置成 inline-block 后， text-align 要在父元素内设置才有效 */
+      /* 因为此时的块元素相对于其父元素来说，是行内内容 */
+      /* text-align: center; */
+
+    }
+
+    .container{
+      background-color: green;
+      /* width: 800px; */
+      /* height: 900px; */
+    }
+
+    .box {
+      background-color: aqua;
+
+      /* width: 300px;
+      height: 300px; */
+      /* display: inline-block; */
+      margin: 0 auto;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">设置居中的元素</div>
+  </div>
+</body>
+
+</html>

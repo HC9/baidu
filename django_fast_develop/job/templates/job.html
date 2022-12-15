@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}职位详情{% endblock %}
+{% block content %}
+    <h1>{{ job.job_name }}</h1>
+    <hr>
+    <p style="font-size: 15px;">职位类型:{{ job.job_types }}</p>
+    <p style="font-size: 15px;">工作城市:{{ job.job_city }}</p>
+    <hr>
+    <h2>工作职责</h2>
+    <p>{{ job.job_responsibility }}</p>
+    <hr>
+    <h2>工作要求</h2>
+    <p>{{ job.job_requirement }}</p>
+
+    {% if user.is_authenticated %}
+        <button onclick="location.href='/resume/add/?apply_position={{ job.job_name }}&&city={{ job.job_city }}'">申请职位</button>
+    {% else %}
+        <p>登录后才能申请职位</p>
+    {% endif %}
+{% endblock %}

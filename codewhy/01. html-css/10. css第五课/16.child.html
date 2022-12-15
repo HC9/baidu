@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>child</title>
+    <style>
+      /* .box>div:first-child{ */
+        /* color:red; */
+      /* } */
+
+      .box > div:first-of-type{
+        color: burlywood;
+      }
+
+      /* .box>div:last-child{ */
+        /* font-size: 20px; */
+      /* } */
+
+      .box div:last-of-type{
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <span>我是span</span>
+      <div>第一个子元素1</div>
+      <div>第一个子元素2</div>
+      <div>第一个子元素3</div>
+      <div>第一个子元素4</div>
+      <span>我是span</span>
+      <div>第一个子元素5</div>
+    </div>
+  </body>
+</html>

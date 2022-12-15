@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>descendant</title>
+    <style>
+      /*.box span {*/
+      /*  !*直接后代元素的语法是直接使用先要有一个定位元素，可以是元素名，也可以是 类或 id 抑或别的选择器*!*/
+      /*  color: red;*/
+      /*}*/
+      [title=third-box] span {
+        color: blue;
+      }
+
+      .box .p-box {
+        color: blueviolet;
+      }
+
+
+      /*直接后代元素*/
+      .box > span {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      /*  直接后代元素*/
+      .box > div > span {
+        font: bold italic 30px/1.5 "JetBrains Mono Medium";
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <span>这是直接后代元素 span</span>
+      <div>
+        <span>这是间接后代元素 span</span>
+
+
+        <div title="third-box">
+          <span>这是第 3 个嵌套中的 span</span>
+          <p class="p-box">我也在第 3 个 box 中</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

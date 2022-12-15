@@ -1,0 +1,14 @@
+body{
+  width: 1080px;
+}
+
+.p-title{
+  font-weight: bold;
+}
+
+.item{
+  /*以块属性显示当前元素*/
+  display: block;
+  background-color: aliceblue;
+  color: #85a3a3;
+}

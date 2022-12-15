@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子阴影 box-shadow</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: blueviolet;
+
+      /* 属性参数列表 */
+      /* offset-x offset-y 两个代表偏移量，x为横轴，y 为正轴 */
+      /* 坐标轴的原点是基于元素的左上角的 */
+      /* 阴影效果可以叠加使用 */
+      box-shadow: 10px 10px 10px, 12px 12px 12px orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    这是一个盒子阴影，今天先来试试第一个盒子阴影
+  </div>
+</body>
+</html>

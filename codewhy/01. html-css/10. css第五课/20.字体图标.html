@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>字体图标</title>
+  <style>
+    @font-face {
+      font-family: "com";
+      src: url(./fonts/download/font_xr6fn8vdgb/iconfont.ttf)
+    }
+    .iconfont{
+      font-family: "com";
+      font-style: normal;
+    }
+
+    .iconfont::before{
+      content: "\e6dc";
+      color: red;
+    /* 使用伪类时，需要注意 iconfont.css 使用的 content 内容*/
+    }
+  </style>
+</head>
+
+<body>
+  <span class="iconfont">这个一台电脑</span>
+</body>
+
+</html>

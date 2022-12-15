@@ -1,0 +1,63 @@
+<!-- html:5 生成 html 5 标准头 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMMET</title>
+</head>
+<body>
+  <!-- 子代元素使用 > 表示 -->
+  <!-- div>p{我是子代元素} -->
+  <div>
+    <p>我是子代元素</p>
+  </div>
+
+  <!-- 兄弟元素使用 + 表示 -->
+  <!-- div+div -->
+  <div>兄弟元素一</div>
+  <div>兄弟元素二</div>
+
+  <!-- 多个相同的元素使用 * -->
+  <!-- ul>li{相同的}*5 -->
+  <ul>
+    <li>相同的01</li>
+    <li>相同的02</li>
+    <li>相同的03</li>
+    <li>相同的04</li>
+    <li>相同的05</li>
+  </ul>
+
+
+  <!-- 上一级元素使用 ^ 表示 -->
+  <!-- 要继续往上级生成，则需要视嵌套的层数而定，需要往上几层元素，则需要几个 ^ -->
+  <!-- 再多 ^ 也会被限制在 body 元素内-->
+  <!-- 可以使用 () 代替 -->
+  <!-- ul>li{第一个LI}^ul>li{通过^生成的li} -->
+  <!-- (ul>li{第一个LI})+ul>li{通过^生成的li} -->
+  <!-- 两种情况是等价的 -->
+  <ul>
+    <li>第一个LI</li>
+  </ul>
+  <ul>
+    <li>通过^生成的li</li>
+  </ul>
+
+
+  <!-- [] 方括号内的是元素属性 -->
+  <!-- {} 大括号内的是元素的内容 -->
+  <!-- # 井号表示元素的 id 属性  -->
+  <!-- $ 表示生成的序数，几个 $ 则表示几位数 -->
+
+  <!-- 隐式标签示例 -->
+  <!-- ul>.item{有多个 item $$}*5 -->
+  <ul>
+    <li class="item">有多个 item 01</li>
+    <li class="item">有多个 item 02</li>
+    <li class="item">有多个 item 03</li>
+    <li class="item">有多个 item 04</li>
+    <li class="item">有多个 item 05</li>
+  </ul>
+</body>
+</html>

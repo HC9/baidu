@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <title>多行文本与选择</title>
+  <style>
+    textarea {
+      resize: ;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <label for="info">
+      你的工作经历
+      <textarea name="info" id="info" cols="10" rows="10"></textarea>
+    </label>
+    <select>
+
+    </select>
+
+    <label for="food">
+      想吃的食物:
+      <select name="food" id="food"  size="2">
+        <option value="lobster">龙虾</option>
+        <!-- value 是选择该选项最终提交的值  -->
+        <option value="roast_chicken" checked>烤鸡</option>
+        <!-- checked 属性可以设置默认的选项值 -->
+        <option value="hot_pot">火锅</option>
+      </select>
+    </label>
+  </form>
+</body>
+
+</html>

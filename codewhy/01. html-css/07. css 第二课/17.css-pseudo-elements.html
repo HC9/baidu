@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伪元素</title>
+  <style>
+    .box {
+      background-color: #f00;
+      width: 300px;
+    }
+
+    .box::first-line {
+      font-family:'Courier New', Courier, monospace;
+      color:darkgray;
+
+    }
+    .box::first-letter{
+      font-style: italic;
+      font-size: 30px;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <span>
+      Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as
+      HTML. It was designed for communication between web browsers and web servers, but it can also be used for other
+      purposes. HTTP follows a classical client-server model, with a client opening a connection to make a request, then
+      waiting until it receives a response. HTTP is a stateless protocol, meaning that the server does not keep any data
+      (state) between two requests.
+    </span>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>only</title>
+  <style>
+    .main :only-child {
+      font-size: 20px;
+    }
+
+    .main :only-of-type {
+      color: orange;
+    }
+
+    .box :only-child{
+      font-size: 30px;
+    }
+
+    :empty{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    /* :empty {
+      width: 100px;
+      height: 100px;
+      background-color: #f00;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <span>Hello SPAN</span>
+    <div>Hello DIV</div>
+  </div>
+
+
+  <div class="box">
+    <p>Hello P</p>
+  </div>
+
+  <div></div>
+
+  <!-- <div class="container"></div> -->
+</body>
+
+</html>

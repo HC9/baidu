@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta title="隐藏元素的方法">
+    <style>
+      .div-box{
+        display: none;
+        /* 默认是按各种元素自身规定的元素级别显示，该是 block 就是 block，该是 Inline 的就是 Inline */
+        /* none 完全不显示在页面中，不占据页面位置 */
+      }
+
+      .div-box-two{
+        visibility: hidden;
+        /* 默认 visible 是可见的 */
+        /* hidden 不可见，但会占据页面位置 */
+      }
+
+      .div-box-three{
+        color: #ff000088;
+        background-color: transparent;
+        opacity: 0.5;
+        /* rgb0 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-box">我是 BOX 元素</div>
+    <div class="div-box-two">我是第二个 box 元素，将使用 visibility</div>
+
+    <div class="div-box-three">我是第三个 Box 元素，使用 rgba 来调整</div>
+    <p>我是一个 p 元素，用于作标志位</p>
+  </body>
+</html>

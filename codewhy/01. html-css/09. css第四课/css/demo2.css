@@ -1,0 +1,62 @@
+
+body{
+  background-color: #f5f5f5f5;
+}
+
+
+.item {
+  /* 设置背景色全白 */
+  background-color: #fff;
+  width: 234px;
+  height: 300px;
+  /* img 设置  text-align 是无效的 */
+  /* 需要在父元素下设置其行内内容居中才行 */
+  text-align: center;
+
+  /* 图片离中顶部有一丢丢距离 */
+  padding-top: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+
+  /* 悬浮有阴影，有视觉效果上是往上移动的并在两边扩散 */
+  /* 整体感觉并没有向上偏移 */
+}
+
+.item:hover{
+  /* box-shadow: 0 10px 10px 5px rgba(0, 0, 0, .1); */
+  /*  */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+}
+
+.item img{
+  /* img 属性行内可替换元素，可以直接设置宽高 */
+  width: 160px;
+  height: 160px;
+  /* 行内内容，在示例图中是居中的 */
+  /* text-align: center; */
+}
+
+.item .title{
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.item .brief{
+  display: block;
+  font-size: 12px;
+  color: #b0b0b0;
+  margin: 10px 18px;
+  /* 字体需要一行内显示 */
+  white-space: nowrap;
+  /* 超出一行的需要隐藏 */
+  overflow: hidden;
+  /* 未显示完全的需要以 ... 显示 */
+  text-overflow: ellipsis;
+  /* overflow 和 text-overflow 需要结合使用才能在本例中生效 */
+}
+
+.item .price{
+  display: inline-block;
+  margin: 10px 18px;
+  color: #ff6700;
+}
